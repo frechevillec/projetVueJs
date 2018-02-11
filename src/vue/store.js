@@ -3,7 +3,7 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export const my_store = new Vuex.Store({
+export const movies_store = new Vuex.Store({
     state: {
         movie_to_add: {},
         movie_to_edit: undefined,
@@ -12,24 +12,6 @@ export const my_store = new Vuex.Store({
         disp_edit:false,
         cpt: 0,
         movies: [
-            {
-                title: "Pacific Rim",
-                year: 2013,
-                langue: "FR / ENG",
-                genre: "Action, Science-Fiction",
-                realisator: "Guillermo Del Toro",
-                synopsys: "Pour combattre les kaijus, des créatures sorties d'une brèche interdimensionnelle près de la faille géologique au fond de l'océan Pacifique en août 2013, un nouveau genre d’arme a été conçu : des robots géants, appelés les jaeger, contrôlés en simultané par deux pilotes dont les esprits sont reliés par un pont neuronal.",
-                note:undefined
-            },
-            {
-                title: "La Ligne Verte",
-                year: 1999,
-                langue: "FR / ENG",
-                genre: "Drame, Fantastique",
-                realisator: "Franck Darabond",
-                synopsys: "Paul Edgecomb, pensionnaire centenaire d'une maison de retraite, est hanté par ses souvenirs. Gardien-chef du pénitencier de Cold Mountain en 1935, il était chargé de veiller au bon déroulement des exécutions capitales en s'efforçant d'adoucir les derniers moments des condamnés. Parmi eux se trouvait un colosse du nom de John Coffey, accusé du viol et du meurtre de deux fillettes. Intrigué par cet homme candide et timide aux dons magiques, Edgecomb va tisser avec lui des liens très forts.",
-                note:undefined
-            },
             {
                 title: "La Grande Vadrouille",
                 year: 1966,
@@ -40,14 +22,14 @@ export const my_store = new Vuex.Store({
                 note:undefined
             },
             {
-                title: "Independance Day",
-                year: 1996,
-                langue: "FR / ENG",
-                genre: "Science-Fiction",
-                realisator: "Roland Emmerich",
-                synopsys: "Une immense soucoupe volante envahit le ciel terrestre, libérant un nombre infini de plus petites soucoupes qui prennent position au-dessus des plus grandes villes du monde. Un informaticien new-yorkais décrypte les signaux émanant des étranges voyageurs. Ils ne sont pas du tout amicaux et ces extraterrestres se préparent à attaquer la Terre.",
+                 titre: "Le Garçon et la Bête",
+                annee: 2016,
+                langue: "FR / ENG / JPN",
+                genre: " Animation, Aventure",
+                realisateur: "Mamoru Hosoda",
+                resume: "Shibuya, le monde des humains, et Jutengai, le monde des Bêtes... C'est l'histoire d'un garçon solitaire et d'une Bête seule, qui vivent chacun dans deux mondes séparés. Un jour, le garçon se perd dans le monde des Bêtes où il devient le disciple de la Bête Kumatetsu qui lui donne le nom de Kyuta. Cette rencontre fortuite est le début d'une aventure qui dépasse l'imaginaire...",
                 note:undefined
-            }
+            },
         ],
     },
     mutations: {

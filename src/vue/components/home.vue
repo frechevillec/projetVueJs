@@ -20,12 +20,12 @@
 </template>
 
 <script>
-    import {my_store} from '../store.js'
+    import {movies_store} from '../store.js'
 
     export default {
         data() {
             return {
-                store: my_store
+                store: movies_store
             }
         },
         computed: {
